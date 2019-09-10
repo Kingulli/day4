@@ -63,7 +63,39 @@
 
     </a-entity>
 
-<a-sky color="#black"> </a-sky>
+    <a-entity id="ceiling and floor"> 
+        
+        <a-plane id= "floor" material="src:#floorpattern" width="10" height="10" position="-1 -2 -4" side="double" color="#454748"; metalness= "0.7" rotation= "-90 0 0"> </a-plane>
+        <a-entity id="ceiling">
+          <a-entity id="ceiling middle" position="0 0 -1.25">
+            <a-plane width="3.3" height="2.49" position="-1 8 -4" side="double" material="color: #7b7e7f; metalness: 0.7" rotation= "-90 0 0 "> </a-plane>
+            <a-plane width="3.3" height="2.49" position="-1 8 -6.5" side="double" material="color: #7b7e7f; metalness: 0.7" rotation= "-90 0 0 "> </a-plane>
+            <a-plane width="3.3" height="2.49" position="-1 8 -1.5" side="double" material="color: #7b7e7f; metalness: 0.7" rotation= "-90 0 0 "> </a-plane>
+            <a-plane width="3.3" height="2.49" position="-1 8 1" side="double" material="color: #7b7e7f; metalness: 0.7" rotation= "-90 0 0 "> </a-plane>
+          </a-entity>
+        </a-entity>
+        <a-entity id="ceiling left"> 
+          <a-entity id="ceiling left pannel" position="-3.33333 0 -1.25">
+            <a-plane width="3.3" height="2.49" position="-1 8 -4" side="double" material="color: #7b7e7f; metalness: 0.7" rotation= "-90 0 0 "> </a-plane>
+            <a-plane width="3.3" height="2.49" position="-1 8 -6.5" side="double" material="color: #7b7e7f; metalness: 0.7" rotation= "-90 0 0 "> </a-plane>
+            <a-plane width="3.3" height="2.49" position="-1 8 -1.5" side="double" material="color: #7b7e7f; metalness: 0.7" rotation= "-90 0 0 "> </a-plane>
+            <a-plane width="3.3" height="2.49" position="-1 8 1" side="double" material="color: #7b7e7f; metalness: 0.7" rotation= "-90 0 0 "> </a-plane>
+          </a-entity>
+        </a-entity>
+        <a-entity id="ceiling right">
+          <a-entity id="ceiling right pannel" position="3.333333333 0 -1.25">
+            <a-plane width="3.3" height="2.49" position="-1 8 -4" side="double" material="color: #7b7e7f; metalness: 0.7" rotation= "-90 0 0 "> </a-plane>
+            <a-plane width="3.3" height="2.49" position="-1 8 -6.5" side="double" material="color: #7b7e7f; metalness: 0.7" rotation= "-90 0 0 "> </a-plane>
+            <a-plane width="3.3" height="2.49" position="-1 8 -1.5" side="double" material="color: #7b7e7f; metalness: 0.7" rotation= "-90 0 0 "> </a-plane>
+            <a-plane width="3.3" height="2.49" position="-1 8 1" side="double" material="color: #7b7e7f; metalness: 0.7" rotation= "-90 0 0 "> </a-plane>
+          </a-entity>
+        </a-entity>
+        <a-plane width="4" height="10" position="-4 3 1" material="color: #7b7e7f; metalness: 0.7" rotation= "0 0 0" side="double"> </a-plane>
+        <a-plane id="elevator pannel" width="1" height="4" position="-4 2 0.99" material="src:#pannel; color: #6f7880" color:"#7c8082" side="double" rotation="0 -180 0" side="double"> </a-plane>
+        <a-plane width="6" height="4" position="1 6 1" material="color: #7b7e7f; metalness: 0.7" side="double"> </a-plane>
+        <a-plane id="door pt1" width="3" height="10" position="-4 3 1.0002" material="color: #aeb3b5; metalness: 0.7" rotation= "0 0 0" side="double" animation="property:position; to: -.5 3 1.0002; dur:6000; easing:linear;  loop:true startEvents:mouseenter"> </a-plane>
+        <a-plane id="door pt2" width="3" height="10" position="-4 3 1.0003" material="color: #999ea2; metalness: 0.7" rotation= "0 0 0" side="double" animation="property:position; to: 2.5 3 1.0003; dur:6000; easing:linear;  loop:true startEvents:mouseenter"> </a-plane>
+      </a-entity>
 
   </a-scene>
   </body>
