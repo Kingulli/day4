@@ -11,7 +11,7 @@
    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
   <body>
     <a-scene >
-       <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script> 
+       <!-- <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script> 
        <a-entity environment="preset: poison; seed: 5; shadow: true; ground: canyon; dressing: trees"></a-entity>
       
       <a-box id="box" color="blue" position=" 0 1 -4" rotation="0 -60 0"
@@ -30,7 +30,39 @@
                 </a-sphere>
                 
  <a-camera> <a-cursor></a-cursor> </a-camera>
+     -->
+
+
+      <a-assets>
+        <img id="floorpattern" src="materials/base.jpg">
+        <img id="basketball" src="materials/bball.jpg">
+        <img id="pannel" src="materials/pannel.jpg">
+        <img id="floor sign" src="materials/floorsign.jpg">
+      </a-assets> 
     
-    </a-scene>
+     <a-entity id="walls"> 
+        
+        <a-entity id="wall 1">
+          <a-plane width="2.49" height="10" position="-4.75 3 -9" side="double" material="color: #7b7e7f; metalness: 0.7"> </a-plane>
+          <a-plane width="2.49" height="10" position="-2.25 3 -9" side="double" material="color: #7b7e7f; metalness: 0.7"> </a-plane>
+          <a-plane width="2.49" height="10" position=".25 3 -9" side="double" material="color: #7b7e7f; metalness: 0.7"> </a-plane>
+          <a-plane width="2.49" height="10" position="2.75 3 -9" side="double" material="color: #7b7e7f; metalness: 0.7"> </a-plane>
+        </a-entity>
+        <a-entity id="wall 2" rotation="0 -90 0" position="-5 0 -3">
+          <a-plane width="2.49" height="10" position="-4.75 3 -9" side="double" material="color: #7b7e7f; metalness: 0.7"> </a-plane>
+          <a-plane width="2.49" height="10" position="-2.25 3 -9" side="double" material="color: #7b7e7f; metalness: 0.7"> </a-plane>
+          <a-plane width="2.49" height="10" position=".25 3 -9" side="double" material="color: #7b7e7f; metalness: 0.7"> </a-plane>
+          <a-plane width="2.49" height="10" position="2.75 3 -9" side="double" material="color: #7b7e7f; metalness: 0.7"> </a-plane>
+        </a-entity>
+        <a-entity id="wall 3" rotation="0 -90 0" position="-15 0 -3">
+          <a-plane width="2.49" height="10" position="-4.75 3 -9" side="double" material="color: #7b7e7f; metalness: 0.7"> </a-plane>
+          <a-plane width="2.49" height="10" position="-2.25 3 -9" side="double" material="color: #7b7e7f; metalness: 0.7"> </a-plane>
+          <a-plane width="2.49" height="10" position=".25 3 -9" side="double" material="color: #7b7e7f; metalness: 0.7"> </a-plane>
+          <a-plane width="2.49" height="10" position="2.75 3 -9" side="double" material="color: #7b7e7f; metalness: 0.7"> </a-plane>
+        </a-entity>
+        
+    </a-entity>
+
+  </a-scene>
   </body>
 </html>
