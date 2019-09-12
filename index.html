@@ -102,6 +102,12 @@
       </a-entity>
 
 
+<a-entity id="lights">
+
+
+    <a-light id="ambient" light="type: ambient"> </a-light>
+
+    <a-light id="floor" light="decay: 0.8; penumbra: 0.58; type: spot; shadowBias: -0.06" rotation="-90 0" position="-1 6 -2.25"></a-light>
 
        <a-entity id="ceiling lights">
         <a-light rotation="-90 0" light="intensity: 0.1; penumbra: 0.5; type: spot"> </a-light>
@@ -127,6 +133,7 @@
         <a-light rotation="90 0" light="intensity: 0.59; penumbra: 0.37; type: spot; angle: 90" visible="" position="-1.15 7.61064 -8.28279"> </a-light>
       </a-entity>
 
+</a-entity>
 
  <a-plane width=".75" height=".4" position="-4 5 0.99" material="src:#floor sign" side="double"> </a-plane>
 
